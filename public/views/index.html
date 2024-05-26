@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pizza Ordering Service</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Pizza Ordering Service</h1>
+
+  <div id="pizzaMenu">
+    <a href="/pizzaInformation?pizza=pepperoni&price=11">
+		<img src="./imgs/pepperoni.jpg" alt="pepperoni">Pizza pepperoni 11$
+    </a>
+	<a href="/pizzaInformation?pizza=four+cheeses&price=12">
+		<img src="./imgs/fourCheeses.jpg" alt="four cheeses">Pizza four cheeses 12$
+	</a>
+	<a href="/pizzaInformation?pizza=margarita&price=13">
+		<img src="./imgs/margarita.jpg" alt="margarita">Pizza margarita 13$
+    </a>
+	<a href="/pizzaInformation?pizza=hawaiian&price=10">
+		<img src="./imgs/hawaiian.jpg" alt="hawaiian">Pizza hawaiian 10$
+    </a>
+	<a href="/pizzaInformation?pizza=bbq+chicken&price=11">
+		<img src="./imgs/bbqChicken.jpg" alt="bbq chicken">Pizza bbq chicken 11$
+    </a>
+	<a href="/pizzaInformation?pizza=mexican&price=13">
+		<img src="./imgs/mexican.jpg" alt="mexican">Pizza mexican 13$
+	</a>
+  </div>
+  <div class="reviewTable">
+	<table>
+		<tr>
+		  <th>Name</th>
+		  <th>Review</th>
+		</tr>
+		<% rows.forEach(function(row) { %>
+		  <tr>
+			<td id="nameTd"><%= row.fullName %></td>
+			<td id="reviewTd"><%= row.review %></td>
+		  </tr>
+		<% }) %>
+	</table>
+  </div>
+</body>
+</html>

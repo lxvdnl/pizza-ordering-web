@@ -1,0 +1,202 @@
+body {
+	background: #ffeca6;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+p, h1, h3, div {
+	text-align: center;
+	font-family: Sans;
+}
+
+a {
+    color: #ff4a2e; 
+    text-decoration: none;
+}
+
+a:hover {
+    color: #891dff;
+    text-decoration: none;
+}
+
+a:active {
+    color: #3fafff;
+    text-decoration: none;
+}
+
+#pizzaMenu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    margin: 10px;
+}
+
+img {
+    width: 100%;
+	height: 100%;
+    cursor: pointer;
+    border: 3px solid #ff9423;
+    background: #666;
+	pointer-events: none;
+}
+
+#pizzaImgInfo {
+	width: 43%;
+	height: 43%;
+    cursor: pointer;
+    border: 1px solid #55c5e9;
+    background: #666;
+	pointer-events: none;
+}
+
+#additionalIngridients {
+	padding: 30px;
+	background: #ffcfa0;
+	width: 38%;
+	height: 38%;
+	margin: auto;
+	font-size:120%;
+	border-radius: 40px;
+	box-shadow: 0 3px 10px -2px rgba(0,0,0,0.4);
+}
+
+#submitButton {
+	margin-top: 20px;
+	width: 100%;
+    height: 50px;
+    border: none;
+    background: #fc9020;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 3px 10px -2px rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+
+#sai {
+	font-size:130%;
+}
+
+#additionalIngridients input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+#orderDetails {
+	display: flex;
+	justify-content: center;
+}
+
+#orderForm {
+	margin-top: 10px;
+	text-align: right;
+	border-radius: 10px;
+}
+
+.textInput {
+	margin-top: 10px;
+	margin-left: 10px;
+	width: 250px;
+	height: 25px;
+	padding: 5px;
+	border: 3px solid #ccc;
+	border-radius: 10px;
+	font-size: 16px;
+	text-align: center;
+	outline: none;
+}
+
+.textInput:focus {
+	border-color: #ff9423;
+}
+
+#submitButtonOrder {
+	margin-top: 20px;
+	width: 50%;
+    height: 50px;
+    border: none;
+    background: #fc9020;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 3px 10px -2px rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+
+#submitButtonOrder:hover, #submitButton:hover {
+    background: #ff9423;
+}
+
+#submitButtonOrder:active {
+    width: 49%;
+    height: 49px;
+}
+
+#submitButton:active {
+	width: 98%;
+    height: 48px;
+}
+
+#reviewLabel {
+	font-size: 25px;
+}
+
+textarea {
+	margin-top: 15px;
+	width: 60%;
+	height: 300px;
+	padding: 30px;
+	border: 3px solid #ccc;
+	border-radius: 30px;
+	font-size: 16px;
+	resize: none;
+	outline: none;
+}
+
+textarea:focus {
+    border-color: #ff9423;
+    box-shadow: 0 3px 10px -2px rgba(0,0,0,0.4);
+}
+
+textarea::-webkit-scrollbar {
+   width: 0.5em;
+    height: 0.5em;
+}
+
+
+.reviewTable {
+	margin-top: 60px;
+    max-height: 395px;
+    overflow-y: auto;
+}
+
+table {
+    width: 100%;
+}
+
+th, td {
+	padding: 10px;
+    padding-left: 20px;
+	padding-right: 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #fffcc6;
+	border-radius: 5px;
+}
+
+#reviewTd {
+	background-color: #ffe000;
+	border-radius: 10px;
+}
+
+#nameTd {
+	background-color: #ffe788;
+	border-radius: 5px;
+}

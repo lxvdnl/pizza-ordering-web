@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title><%= pizzaName %></title>
+	<link rel="stylesheet" type="text/css" href="../styles.css">
+</head>
+<body>
+	<h1><%= pizzaName %></h1>
+    <div id="pizzaImgID">
+		<img id="pizzaImgInfo" src="../imgs/<%= pizzaImgName%>.jpg" alt=<%= pizzaName%>>
+		<h3>Price excluding additional ingredients: <%= pizzaPrice%>$</h3>
+	</div>
+	<h3><%= mainIngridients%></h3>
+	<div>
+		<form id="additionalIngridients" action="orderPage" method="POST">
+			<label id="sai">Select additional ingredients</label><br><br>
+			<div id="additionalIngridientsDiv">
+				<%- additionalIngredients%>
+				<input type="hidden" name="pizzaPrice" value=<%= pizzaPrice%>>
+				<input type="hidden" name="additionalIngredientsPrice" value=0>
+				<input type="hidden" name="additionalIngredientsPrice" value=0>
+			</div>
+			<input id="submitButton" type="submit" value="Go to the payment">
+		</form>
+	</div>
+</body>
+</html>

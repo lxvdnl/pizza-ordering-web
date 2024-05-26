@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Order pizza</title>
+	<link rel="stylesheet" type="text/css" href="../styles.css">	
+</head>
+<body>
+	<h1>Check</h1>
+	<p>Price of pizza without additional ingredients: <%= pizzaPrice %>$</p>
+    <p>Price of additional ingredients: <%= additionalIngredientsPrice %>$</p>
+	<p>Total price: <%= totalPrice %>$</p>
+	<div id="orderDetails">
+		<form id="orderForm" action="review" method="POST">
+			<label>Full name</label>
+			<input class="textInput" name="fullName" type="text" required><br>
+			<label>Phone number</label>
+			<input class="textInput" name="phoneNumber" type="text" required><br>
+			<label>City</label>
+			<input class="textInput" type="text" required><br>
+			<label>Adrress</label>
+			<input class="textInput" type="text" required><br>
+			<input id="submitButtonOrder" type="submit" value="Order">
+		</form>		
+	</div>
+</body>
+</html>
